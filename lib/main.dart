@@ -13,12 +13,12 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
             child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const CircleAvatar(
+          children: const <Widget>[
+            CircleAvatar(
               radius: 50,
               backgroundImage: AssetImage('images/nice.jpg'),
             ),
-            const Text(
+            Text(
               'Vagun Babbar',
               style: TextStyle(
                 fontSize: 40,
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
                 fontFamily: 'Pacifico',
               ),
             ),
-            const Text(
+            Text(
               'Flutter Developer',
               style: TextStyle(
                 color: Colors.white,
@@ -37,73 +37,56 @@ class MyApp extends StatelessWidget {
                 letterSpacing: 2.5,
               ),
             ),
+            SizedBox(
+              height: 20,
+              width: 150,
+              child: Divider(color: Colors.white),
+            ),
             Card(
               color: Colors.white,
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              child: Row(
-                children: const <Widget>[
-                  Icon(
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              child: ListTile(leading: Icon(
                     Icons.add_shopping_cart,
                     color: Colors.red,
                   ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
+                  title: Text(
                     '701781xxxx',
                     style: TextStyle(
                         color: Colors.redAccent,
                         fontFamily: 'Sourcesanspro',
                         fontSize: 20),
-                  )
-                ],
-              ),
+                  ),),
             ),
             Card(
-              
               color: Colors.white,
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              child: Row(
-                children: const <Widget>[
-                  Icon(
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              child: ListTile(leading: Icon(
                     Icons.email,
                     color: Colors.red,
                   ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
+                  title: Text(
                     'vagun.babbar@gmail.com',
                     style: TextStyle(
                         color: Colors.redAccent,
                         fontFamily: 'Sourcesanspro',
                         fontSize: 20),
-                  )
-                ],
-              ),
+                  ),),
             ),
             Card(
-            color: Colors.white,
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              child: Row(
-                children: const <Widget>[
-                  Icon(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              child: ListTile(leading: Icon(
                     Icons.location_city,
                     color: Colors.red,
                   ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
+                  title: Text(
                     'JAIPUR',
                     style: TextStyle(
                         color: Colors.redAccent,
                         fontFamily: 'Sourcesanspro',
                         fontSize: 20),
-                  )
-                ],
-              ),
-            )
+                  ),),
+            ),
           ],
         )),
       ),
