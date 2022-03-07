@@ -37,8 +37,7 @@ class MyApp extends StatelessWidget {
                 letterSpacing: 2.5,
               ),
             ),
-            Container(
-              padding: EdgeInsets.all(10),
+            Card(
               color: Colors.white,
               margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
               child: Row(
@@ -60,8 +59,8 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              padding: EdgeInsets.all(10),
+            Card(
+              
               color: Colors.white,
               margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
               child: Row(
@@ -83,9 +82,8 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              padding: EdgeInsets.all(10),
-              color: Colors.white,
+            Card(
+            color: Colors.white,
               margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
               child: Row(
                 children: const <Widget>[
